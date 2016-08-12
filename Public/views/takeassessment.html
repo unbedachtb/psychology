@@ -1,0 +1,10 @@
+<a ui-sref='home'><img src='assets/images/home.png' alt="home image" class="imageOfHome" /></a>
+<div class="titleOfAssessment" ng-repeat = 'assessment in assessments'>
+  {{assessment.name}}
+</div>
+<div class="assessmentDescriptions" ng-repeat = 'assessment in assessments'>
+  {{assessment.description}}
+</div>
+<div class="questions" ng-repeat = 'question in questions'>
+  {{question.question}}
+</div>
