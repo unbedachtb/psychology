@@ -1,4 +1,4 @@
-angular.module("app").controller("mainCtrl", function($scope, mainService){
+angular.module("app").controller("homeCtrl", function($scope, mainService){
   $scope.getAssessments = function() {
     mainService.getAssessments().then(function(results) {
       $scope.assessments = results;

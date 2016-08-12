@@ -3,12 +3,12 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
 var connectionString =
-'postgres://postgres@localhost/psychology'; //connection string to massive
+'postgres://postgres@localhost/psychology'; //connection string to massive?
 
 var app = module.exports = express();  //set app equal to exporting express and express invoked
 var massiveInstance = massive.connectSync({
   connectionString: connectionString
-}); //an instance of massive is equal to object with connection string
+}); //an instance of massive is equal to object with connection string...do I need to understand why all of this is happening?
 app.set('db', massiveInstance); //allowing app to use massive
 var db = app.get('db');
 app.use(bodyParser.json());  //initialize bodyParser and cors
