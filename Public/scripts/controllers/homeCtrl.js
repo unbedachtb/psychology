@@ -6,12 +6,13 @@ angular.module("app").controller("homeCtrl", function($scope, mainService){
   };
   $scope.getAssessments();
 
-  $scope.getQuestions = function () {
-    mainService.getQuestions().then(function(results) {
-      $scope.questions = results;
-    });
-  };
-  $scope.getQuestions();
+  // $scope.getQuestions = function () {
+  //   mainService.getQuestions().then(function(results) {
+  //     console.log(results);
+  //     $scope.questions = results;
+  //   });
+  // };
+  // $scope.getQuestions();
 
 
 });

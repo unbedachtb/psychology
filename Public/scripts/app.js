@@ -9,7 +9,7 @@ angular.module("app", ["ui.router"]).config(function($stateProvider, $urlRouterP
             templateUrl: 'views/home.html'
         })
         .state('takeassessment', {
-            url: '/takeassessment/:id',
+            url: '/takeassessment/:id/:name',
             templateUrl: '../views/takeassessment.html',
             controller: 'assessmentsCtrl'
         })

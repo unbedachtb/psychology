@@ -12,6 +12,7 @@ angular.module("app").service("mainService", function($http){
       method: 'GET',
       url: '/questions/' + id
     }).then(function(results) {
+      console.log(results);
       return results.data;
     });
   };

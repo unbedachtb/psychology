@@ -11,7 +11,8 @@ module.exports = {
   },
 
     getQuestions: function(req, res, next) {
-      db.get_questions_for_assessment(req.params.assessmentid, function(err, questions) {
+      db.get_questions_joined_to_assessment(req.params.assessmentid, function(err, questions) {
+        console.log(questions);
         res.status(200).json(questions);
       });
   }
