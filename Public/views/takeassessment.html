@@ -1,7 +1,12 @@
 <!--I don't think that ng-repeat will work here.-->
-<a ui-sref='home'><img src='assets/images/home.png' alt="home image" class="imageOfHome" /></a>
-{{assessmentName}}
-{{assessmentDescription}}
+<div class="take-assessment-page">
+
+
+<a ui-sref='home'><img src='assets/images/home_icon.png' alt="home image" class="imageOfHome"/></a>
+<a ui-sref='login' class="log-out">Log Out</a>
+<p class="assessmentName">{{assessmentName}}</p> <br>
+<p class="assessmentDescription">{{assessmentDescription}}</p>
 <div class="questions" ng-repeat = 'question in questions'>
   {{question.question}}
+</div>
 </div>

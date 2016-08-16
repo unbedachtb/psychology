@@ -1,5 +1,10 @@
-<a ui-sref='home'><img src='assets/images/home.png' alt="home image" class="imageOfHome" /></a>
-<p class="assessmentsAvailable">Assessments Available</p>
-<div class="assessments" ng-repeat = 'assessment in assessments'>
-<a ui-sref='takeassessment({id:assessment.id, name:assessment.name})'>{{assessment.name}}</a>
+<div class="homePage">
+    <a ui-sref='home'><img src='assets/images/home_icon.png' alt="home image" class="imageOfHome"/></a>
+    <a ui-sref='login' class="log-out">Log Out</a>
+    <p class="assessmentsAvailable">Choose an Assessment</p>
+    <div class="parent-of-assessments">
+        <div class="assessments" ng-repeat='assessment in assessments'>
+            <a ui-sref='takeassessment({id:assessment.id, name:assessment.name})'>{{assessment.name}}</a>
+        </div>
+    </div>
 </div>
