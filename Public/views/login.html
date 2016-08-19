@@ -3,27 +3,27 @@
     <div class="rightSideOfNavBar">
         <!-- <p class="usernameText">Username</p>
     <p class="passwordText">Password</p> -->
-        <input class="usernameInput" type="text" name="name" value="" placeholder="Username">
-        <input class="passwordInput" type="password" name="name" value="" placeholder="Password">
-        <button class="loginButton" type="button" name="button">
+        <input class="usernameInput" type="text" name="name" value="" placeholder="Username" ng-model="user.name">
+        <input class="passwordInput" type="password" name="name" value="" placeholder="Password" ng-model="user.password">
+        <button class="loginButton" type="button" name="button" ng-click="login(user)">
             <p class="logIn">Log In</p>
         </button>
     </div>
 </div>
 <div class="body">
     <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
-        <source src="../assets/images/Escalate/MP4/Escalate.mp4" type="video/mp4"/>
+        <!-- <source src="../assets/images/Escalate/MP4/Escalate.mp4" type="video/mp4"/> -->
         <source src="../assets/images/Escalate/OGV/Escalate.ogv" type="video/ogg"/>
         <source src="../assets/images/Escalate/WEBM/Escalate.webm" type="video/webm"/>
         Your browser doesn't support HTML5 video. Here's a
         <a href="#">link</a>
         to download the video.</video>
     <p class="signUp">Sign Up</p>
-    <input class="input" type="text" name="name" value="" placeholder="New Username" size="48">
+    <input class="input" type="text" name="name" value="" placeholder="New Username" size="48" ng-model="newUser.name">
     <br>
-    <input class="input" type="password" name="name" value="" placeholder="New Password" size="48">
+    <input class="input" type="password" name="name" value="" placeholder="New Password" size="48" ng-model="newUser.password">
     <br>
-    <button class="button" type="button" name="button">
+    <button class="button" type="button" name="button" ng-click="signUp(newUser)">
         <p class="createAccount">Create Account</p>
     </button>
 </div>

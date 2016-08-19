@@ -12,6 +12,7 @@
     "body-parser": "^1.15.2",
     "cors": "^2.7.1",
     "express": "^4.14.0",
-    "massive": "^2.4.0"
+    "massive": "^2.4.0",
   }
 }
+//node crashing....looking for passport

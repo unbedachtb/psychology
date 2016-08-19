@@ -3,8 +3,8 @@
     <a ui-sref='login' class="log-out">Log Out</a>
     <p class="assessmentsAvailable">Choose an Assessment</p>
     <div class="parent-of-assessments">
-        <div class="assessments" ng-repeat='assessment in assessments'>
-            <a ui-sref='takeassessment({id:assessment.id, name:assessment.name})'>{{assessment.name}}</a>
+        <a ui-sref="takeassessment1" class="assessments">Beck Anxiety Inventory</a>
+        <a ui-sref="takeassessment2" class="assessments">Beck's Depression Inventory</a>
         </div>
     </div>
 </div>

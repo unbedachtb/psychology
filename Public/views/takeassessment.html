@@ -4,9 +4,175 @@
 
 <a ui-sref='home'><img src='assets/images/home_icon.png' alt="home image" class="imageOfHome"/></a>
 <a ui-sref='login' class="log-out">Log Out</a>
-<p class="assessmentName">{{assessmentName}}</p> <br>
-<p class="assessmentDescription">{{assessmentDescription}}</p>
-<div class="questions" ng-repeat = 'question in questions'>
-  {{question.question}}
-</div>
+<p class="assessmentName">Beck Anxiety Inventory</p> <br>
+<p class="assessmentDescription">Below is a list of common symptoms of anxiety. Please carefully read each item in the list. Indicate home much you have been bothered by that symptom during the past month, including today, by using the key and selecting the number in the corresponding space under the symptom.</p> <p>
+  <ul class="questions2">
+<li>Numbness or tingling
+  <ul  id="key">
+  <ol> <input type="radio" name="Q1" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q1" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q1" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q1" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+<li>Feeling hot
+  <ul  id="key">
+  <ol> <input type="radio" name="Q2" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q2" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q2" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q2" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+
+<li>Wobbliness in legs
+  <ul  id="key">
+  <ol> <input type="radio" name="Q3" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q3" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q3" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q3" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Unable to relax
+  <ul  id="key">
+  <ol> <input type="radio" name="Q4" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q4" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q4" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q4" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Fear of worst happening
+  <ul  id="key">
+  <ol> <input type="radio" name="Q5" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q5" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q5" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q5" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Dizzy or lightheaded
+  <ul  id="key">
+  <ol> <input type="radio" name="Q6" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q6" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q6" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q6" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Heart pounding/racing
+  <ul  id="key">
+  <ol> <input type="radio" name="Q7" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q7" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q7" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q7" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Unsteady
+  <ul  id="key">
+  <ol> <input type="radio" name="Q8" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q8" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q8" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q8" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Terrified or afraid
+  <ul  id="key">
+  <ol> <input type="radio" name="Q9" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q9" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q9" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q9" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Nervous
+  <ul  id="key">
+  <ol> <input type="radio" name="Q10" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q10" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q10" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q10" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Feeling of choking
+  <ul  id="key">
+  <ol> <input type="radio" name="Q11" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q11" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q11" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q11" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Hands trembling
+  <ul  id="key">
+  <ol> <input type="radio" name="Q12" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q12" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q12" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q12" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Shaky/unsteady
+  <ul  id="key">
+  <ol> <input type="radio" name="Q13" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q13" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q13" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q13" value=4> Severely - it bothered me a lot</ol></li>
+</ul>
+</li>
+<li>Fear of losing control
+  <ul  id="key">
+  <ol> <input type="radio" name="Q14" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q14" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q14" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q14" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Difficulty in breathing
+  <ul  id="key">
+  <ol> <input type="radio" name="Q15" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q15" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q15" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q15" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Fear of dying
+  <ul  id="key">
+  <ol> <input type="radio" name="Q16" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q16" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q16" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q16" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Scared
+  <ul  id="key">
+  <ol> <input type="radio" name="Q17" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q17" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q17" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q17" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Indigestion
+  <ul  id="key">
+  <ol> <input type="radio" name="Q18" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q18" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q18" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q18" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Faint/lightheaded
+  <ul  id="key">
+  <ol> <input type="radio" name="Q19" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q19" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q19" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q19" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Face flushed
+  <ul  id="key">
+  <ol> <input type="radio" name="Q20" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q20" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q20" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q20" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li>
+<li>Hot/cold sweats
+  <ul  id="key">
+  <ol> <input type="radio" name="Q21" value=1> not at all</ol>
+  <ol> <input type="radio" name="Q21" value=2> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q21" value=3> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q21" value=4> Severely - it bothered me a lot</ol></li>
+  </ul>
+</li></ul>
 </div>

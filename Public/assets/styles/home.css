@@ -2,8 +2,8 @@
 .imageOfHome {
   width: 50px;
   height: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .assessmentsAvailable {
   text-align: center;
@@ -22,17 +22,18 @@
 .assessments {
   /*border: red solid;*/
 }
-.assessments a{
+.assessments {
   text-decoration: none;
   color: black;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 40px;
   margin-left: 26px;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 35px;
   border: lightblue solid;
   border-radius: 15px;
   padding: 20px;
+  padding-bottom: 55px;
   background-color: white;
 }
 .homePage {
@@ -42,6 +43,7 @@
 }
 .log-out {
   text-decoration: none;
+  margin-top: 0px;
   margin-left: 30px;
   color: white;
   font-family: 'Quattrocento Sans', sans-serif;

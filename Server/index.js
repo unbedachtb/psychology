@@ -20,7 +20,7 @@ var assessmentsCtrl = require('./controllers/assessmentsCtrl.js');
 var resultsCtrl = require('./controllers/resultsCtrl.js');
 
 //endpoints
-app.get('/user/:id', userCtrl.getUser);  //get user by id - login
+app.post('/login', userCtrl.login);  //THIS SITE SHOULD NOT BE SHIPPED BECAUSE OF THE INSECURE LOGIN METHOD I USED!!//get user by id - login
 app.post('/user', userCtrl.postUser);  //post user - create new account
 app.get('/assessments', assessmentsCtrl.getAssessments);  //get all assessments - see assessments
 app.get('/questions/:assessmentid', assessmentsCtrl.getQuestions);  //get asssessment by id and assessments by id joined to score - see picked assessment and results
