@@ -7,21 +7,23 @@ angular.module("app", ["ui.router"]).config(function($stateProvider, $urlRouterP
         })
         .state('home', {
             url: '/',
-            templateUrl: 'views/home.html'
+            templateUrl: 'views/home.html',
+            controller: 'homeCtrl'
         })
         .state('takeassessment1', {
             url: '/takeassessment1',
             templateUrl: '../views/takeassessment.html',
-            controller: 'assessmentsCtrl'
+            controller: 'resultsCtrl'
         })
         .state('takeassessment2', {
             url: '/takeassessment2/',
             templateUrl: '../views/takeassessment2.html',
-            controller: 'assessmentsCtrl'
+            controller: 'resultsCtrl'
         })
         .state('results', {
             url: '/results',
-            templateUrl: '../Views/results.html'
+            templateUrl: '../Views/results.html',
+            controller: 'resultsCtrl'
         });
     $urlRouterProvider
         .otherwise('/login');

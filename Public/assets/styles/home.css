@@ -1,9 +1,21 @@
 @import 'https://fonts.googleapis.com/css?family=Quattrocento+Sans';
+.homePage {
+  background-image: url('../images/background-marsh.png');
+  background-size: cover;
+  height: 100vh;
+}
 .imageOfHome {
   width: 50px;
   height: 50px;
   margin-left: 20px;
   margin-top: 20px;
+}
+.log-out {
+  text-decoration: none;
+  margin-top: 0px;
+  margin-left: 30px;
+  color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .assessmentsAvailable {
   text-align: center;
@@ -20,9 +32,6 @@
   margin-top: 200px;
 }
 .assessments {
-  /*border: red solid;*/
-}
-.assessments {
   text-decoration: none;
   color: black;
   text-align: center;
@@ -35,16 +44,4 @@
   padding: 20px;
   padding-bottom: 55px;
   background-color: white;
-}
-.homePage {
-  background-image: url('../images/background-marsh.png');
-  background-size: cover;
-  height: 100vh;
-}
-.log-out {
-  text-decoration: none;
-  margin-top: 0px;
-  margin-left: 30px;
-  color: white;
-  font-family: 'Quattrocento Sans', sans-serif;
 }

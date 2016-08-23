@@ -6,7 +6,7 @@
   position: relative;
   z-index: 10;
 }
-.brainFit {
+.lyft {
   color: white;
   font-size: 50px;
   margin-left: 100px;
@@ -75,11 +75,25 @@
   position: relative;
 }
 .body {
-  background-image: url('../images/Escalate.mp4');
+  /*background-image: url('../images/Escalate.mp4');*/
   height: 60vh;
   width: 100%;
   text-align: center;
   position: relative;
+}
+#my-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
 }
 .signUp {
  padding: 30px;
@@ -134,18 +148,4 @@
   font-family: 'Reem Kufi', sans-serif;
   z-index: 10 !important;
   position: relative;
-}
-#my-video {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
 }

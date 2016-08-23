@@ -18,6 +18,6 @@ create table users(
 
 create table results(
   id serial primary key not null,
-  score int,
-  
-)
+  user_id ,
+  score int
+);

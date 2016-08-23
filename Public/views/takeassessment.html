@@ -1,4 +1,3 @@
-<!--I don't think that ng-repeat will work here.-->
 <div class="take-assessment-page">
 
 
@@ -9,170 +8,172 @@
   <ul class="questions2">
 <li>Numbness or tingling
   <ul  id="key">
-  <ol> <input type="radio" name="Q1" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q1" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q1" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q1" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q1" value=1 ng-model="scores.q1"> not at all</ol>
+  <ol> <input type="radio" name="Q1" value=2 ng-model="scores.q1"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q1" value=3 ng-model="scores.q1"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q1" value=4 ng-model="scores.q1"> Severely - it bothered me a lot</ol></li>
 </ul>
 <li>Feeling hot
   <ul  id="key">
-  <ol> <input type="radio" name="Q2" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q2" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q2" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q2" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q2" value=1 ng-model="scores.q2"> not at all</ol>
+  <ol> <input type="radio" name="Q2" value=2 ng-model="scores.q2"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q2" value=3 ng-model="scores.q2"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q2" value=4 ng-model="scores.q2"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 
 <li>Wobbliness in legs
   <ul  id="key">
-  <ol> <input type="radio" name="Q3" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q3" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q3" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q3" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q3" value=1 ng-model="scores.q3"> not at all</ol>
+  <ol> <input type="radio" name="Q3" value=2 ng-model="scores.q3"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q3" value=3 ng-model="scores.q3"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q3" value=4 ng-model="scores.q3"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Unable to relax
   <ul  id="key">
-  <ol> <input type="radio" name="Q4" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q4" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q4" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q4" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q4" value=1 ng-model="scores.q4"> not at all</ol>
+  <ol> <input type="radio" name="Q4" value=2 ng-model="scores.q4"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q4" value=3 ng-model="scores.q4"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q4" value=4 ng-model="scores.q4"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Fear of worst happening
   <ul  id="key">
-  <ol> <input type="radio" name="Q5" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q5" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q5" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q5" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q5" value=1 ng-model="scores.q5"> not at all</ol>
+  <ol> <input type="radio" name="Q5" value=2 ng-model="scores.q5"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q5" value=3 ng-model="scores.q5"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q5" value=4 ng-model="scores.q5"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Dizzy or lightheaded
   <ul  id="key">
-  <ol> <input type="radio" name="Q6" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q6" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q6" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q6" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q6" value=1 ng-model="scores.q6"> not at all</ol>
+  <ol> <input type="radio" name="Q6" value=2 ng-model="scores.q6"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q6" value=3 ng-model="scores.q6"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q6" value=4 ng-model="scores.q6"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Heart pounding/racing
   <ul  id="key">
-  <ol> <input type="radio" name="Q7" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q7" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q7" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q7" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q7" value=1 ng-model="scores.q7"> not at all</ol>
+  <ol> <input type="radio" name="Q7" value=2 ng-model="scores.q7"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q7" value=3 ng-model="scores.q7"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q7" value=4 ng-model="scores.q7"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Unsteady
   <ul  id="key">
-  <ol> <input type="radio" name="Q8" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q8" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q8" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q8" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q8" value=1 ng-model="scores.q8"> not at all</ol>
+  <ol> <input type="radio" name="Q8" value=2 ng-model="scores.q8"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q8" value=3 ng-model="scores.q8"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q8" value=4 ng-model="scores.q8"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Terrified or afraid
   <ul  id="key">
-  <ol> <input type="radio" name="Q9" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q9" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q9" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q9" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q9" value=1 ng-model="scores.q9"> not at all</ol>
+  <ol> <input type="radio" name="Q9" value=2 ng-model="scores.q9"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q9" value=3 ng-model="scores.q9"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q9" value=4 ng-model="scores.q9"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Nervous
   <ul  id="key">
-  <ol> <input type="radio" name="Q10" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q10" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q10" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q10" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q10" value=1 ng-model="scores.q10"> not at all</ol>
+  <ol> <input type="radio" name="Q10" value=2 ng-model="scores.q10"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q10" value=3 ng-model="scores.q10"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q10" value=4 ng-model="scores.q10"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Feeling of choking
   <ul  id="key">
-  <ol> <input type="radio" name="Q11" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q11" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q11" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q11" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q11" value=1 ng-model="scores.q11"> not at all</ol>
+  <ol> <input type="radio" name="Q11" value=2 ng-model="scores.q11"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q11" value=3 ng-model="scores.q11"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q11" value=4 ng-model="scores.q11"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Hands trembling
   <ul  id="key">
-  <ol> <input type="radio" name="Q12" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q12" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q12" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q12" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q12" value=1 ng-model="scores.q12"> not at all</ol>
+  <ol> <input type="radio" name="Q12" value=2 ng-model="scores.q12"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q12" value=3 ng-model="scores.q12"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q12" value=4 ng-model="scores.q12"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Shaky/unsteady
   <ul  id="key">
-  <ol> <input type="radio" name="Q13" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q13" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q13" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q13" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q13" value=1 ng-model="scores.q13"> not at all</ol>
+  <ol> <input type="radio" name="Q13" value=2 ng-model="scores.q13"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q13" value=3 ng-model="scores.q13"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q13" value=4 ng-model="scores.q13"> Severely - it bothered me a lot</ol></li>
 </ul>
 </li>
 <li>Fear of losing control
   <ul  id="key">
-  <ol> <input type="radio" name="Q14" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q14" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q14" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q14" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q14" value=1 ng-model="scores.q14"> not at all</ol>
+  <ol> <input type="radio" name="Q14" value=2 ng-model="scores.q14"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q14" value=3 ng-model="scores.q14"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q14" value=4 ng-model="scores.q14"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Difficulty in breathing
   <ul  id="key">
-  <ol> <input type="radio" name="Q15" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q15" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q15" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q15" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q15" value=1 ng-model="scores.q15"> not at all</ol>
+  <ol> <input type="radio" name="Q15" value=2 ng-model="scores.q15"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q15" value=3 ng-model="scores.q15"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q15" value=4 ng-model="scores.q15"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Fear of dying
-  <ul  id="key">
-  <ol> <input type="radio" name="Q16" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q16" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q16" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q16" value=4> Severely - it bothered me a lot</ol></li>
+  <ul  id="key"> ng-model="scores.q16"
+  <ol> <input type="radio" name="Q16" value=1 ng-model="scores.q16"> not at all</ol>
+  <ol> <input type="radio" name="Q16" value=2 ng-model="scores.q16"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q16" value=3 ng-model="scores.q16"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q16" value=4 ng-model="scores.q16"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Scared
   <ul  id="key">
-  <ol> <input type="radio" name="Q17" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q17" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q17" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q17" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q17" value=1 ng-model="scores.q17"> not at all</ol>
+  <ol> <input type="radio" name="Q17" value=2 ng-model="scores.q17"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q17" value=3 ng-model="scores.q17"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q17" value=4 ng-model="scores.q17"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Indigestion
   <ul  id="key">
-  <ol> <input type="radio" name="Q18" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q18" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q18" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q18" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q18" value=1 ng-model="scores.q18"> not at all</ol>
+  <ol> <input type="radio" name="Q18" value=2 ng-model="scores.q18"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q18" value=3 ng-model="scores.q18"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q18" value=4 ng-model="scores.q18"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Faint/lightheaded
   <ul  id="key">
-  <ol> <input type="radio" name="Q19" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q19" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q19" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q19" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q19" value=1 ng-model="scores.q19"> not at all</ol>
+  <ol> <input type="radio" name="Q19" value=2 ng-model="scores.q19"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q19" value=3 ng-model="scores.q19"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q19" value=4 ng-model="scores.q19"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Face flushed
   <ul  id="key">
-  <ol> <input type="radio" name="Q20" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q20" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q20" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q20" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q20" value=1 ng-model="scores.q20"> not at all</ol>
+  <ol> <input type="radio" name="Q20" value=2 ng-model="scores.q20"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q20" value=3 ng-model="scores.q20"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q20" value=4 ng-model="scores.q20"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li>
 <li>Hot/cold sweats
   <ul  id="key">
-  <ol> <input type="radio" name="Q21" value=1> not at all</ol>
-  <ol> <input type="radio" name="Q21" value=2> Mildly, but it didn't bother me much</ol>
-  <ol> <input type="radio" name="Q21" value=3> Moderately - it wasn't pleasant at times </ol>
-  <ol> <input type="radio" name="Q21" value=4> Severely - it bothered me a lot</ol></li>
+  <ol> <input type="radio" name="Q21" value=1 ng-model="scores.q21"> not at all</ol>
+  <ol> <input type="radio" name="Q21" value=2 ng-model="scores.q21"> Mildly, but it didn't bother me much</ol>
+  <ol> <input type="radio" name="Q21" value=3 ng-model="scores.q21"> Moderately - it wasn't pleasant at times </ol>
+  <ol> <input type="radio" name="Q21" value=4 ng-model="scores.q21"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li></ul>
+<a ui-sref='results'>
+<div class = "resultsbutton"  ng-click="postResults(newUser, scores)">Submit</div></a>
 </div>

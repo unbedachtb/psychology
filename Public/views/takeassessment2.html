@@ -1,4 +1,4 @@
-<!--I don't think that ng-repeat will work here.-->
+
 <div class="take-assessment-page">
 
 
@@ -11,176 +11,159 @@
     <ul class="questions">
   <li>Question 1
     <ul  id="key">
-    <ol> <input type="radio" name="Q22" value=1> I do not feel sad</ol>
-    <ol> <input type="radio" name="Q22" value=2> I feel sad</ol>
-    <ol> <input type="radio" name="Q22" value=3> I am sad all the time and I can't snap out of it </ol>
-    <ol> <input type="radio" name="Q22" value=4> I am so sad and unhappy that I can't stand it</ol></li>
+    <ol> <input type="radio" name="Q22" value=1 ng-model="scores.q22"> I do not feel sad</ol>
+    <ol> <input type="radio" name="Q22" value=2 ng-model="scores.q22"> I feel sad</ol>
+    <ol> <input type="radio" name="Q22" value=3 ng-model="scores.q22"> I am sad all the time and I can't snap out of it </ol>
+    <ol> <input type="radio" name="Q22" value=4 ng-model="scores.q22"> I am so sad and unhappy that I can't stand it</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 2
     <ul  id="key">
-    <ol> <input type="radio" name="Q23" value=1> I am not particularly discouraged about the future</ol>
-    <ol> <input type="radio" name="Q23" value=2> I feel discouraged about the future</ol>
-    <ol> <input type="radio" name="Q23" value=3> I feel I have nothing to look forward to </ol>
-    <ol> <input type="radio" name="Q23" value=4> I feel the future is hopeless and that things cannot improve</ol></li>
+    <ol> <input type="radio" name="Q23" value=1 ng-model="scores.q23"> I am not particularly discouraged about the future</ol>
+    <ol> <input type="radio" name="Q23" value=2 ng-model="scores.q23"> I feel discouraged about the future</ol>
+    <ol> <input type="radio" name="Q23" value=3 ng-model="scores.q23"> I feel I have nothing to look forward to </ol>
+    <ol> <input type="radio" name="Q23" value=4 ng-model="scores.q23"> I feel the future is hopeless and that things cannot improve</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 3
     <ul  id="key">
-    <ol> <input type="radio" name="Q24" value=1> I do not feel like a failure</ol>
-    <ol> <input type="radio" name="Q24" value=2> I feel I have failed more than the average person</ol>
-    <ol> <input type="radio" name="Q24" value=3> As I look back on my life, all I can see is a lot of failures </ol>
-    <ol> <input type="radio" name="Q24" value=4>  I feel I am a complete failure as a person</ol>Q25
+    <ol> <input type="radio" name="Q24" value=1 ng-model="scores.q24"> I do not feel like a failure</ol>
+    <ol> <input type="radio" name="Q24" value=2 ng-model="scores.q24"> I feel I have failed more than the average person</ol>
+    <ol> <input type="radio" name="Q24" value=3 ng-model="scores.q24"> As I look back on my life, all I can see is a lot of failures </ol>
+    <ol> <input type="radio" name="Q24" value=4 ng-model="scores.q24">  I feel I am a complete failure as a person</ol>Q25
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 4
     <ul  id="key">
-    <ol> <input type="radio" name="Q25" value=1> I get as much satisfaction out of things as I used to</ol>
-    <ol> <input type="radio" name="Q25" value=2> I don't enjoy things the way I used to</ol>
-    <ol> <input type="radio" name="Q25" value=3> I don't get real satisfaction out of anything anymore </ol>
-    <ol> <input type="radio" name="Q25" value=4>  I am dissatisfied or bored with everything</ol></li>
+    <ol> <input type="radio" name="Q25" value=1 ng-model="scores.q25"> I get as much satisfaction out of things as I used to</ol>
+    <ol> <input type="radio" name="Q25" value=2 ng-model="scores.q25"> I don't enjoy things the way I used to</ol>
+    <ol> <input type="radio" name="Q25" value=3 ng-model="scores.q25"> I don't get real satisfaction out of anything anymore </ol>
+    <ol> <input type="radio" name="Q25" value=4 ng-model="scores.q25">  I am dissatisfied or bored with everything</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 5
     <ul  id="key">
-    <ol> <input type="radio" name="Q26" value=1> I don't feel particularly guilty</ol>
-    <ol> <input type="radio" name="Q26" value=2> I feel guilty a good part of the time</ol>
-    <ol> <input type="radio" name="Q26" value=3> I feel quite guilty most of the time </ol>
-    <ol> <input type="radio" name="Q26" value=4>  I feel guilty all of the time</ol></li>
+    <ol> <input type="radio" name="Q26" value=1 ng-model="scores.q26"> I don't feel particularly guilty</ol>
+    <ol> <input type="radio" name="Q26" value=2 ng-model="scores.q26"> I feel guilty a good part of the time</ol>
+    <ol> <input type="radio" name="Q26" value=3 ng-model="scores.q26"> I feel quite guilty most of the time </ol>
+    <ol> <input type="radio" name="Q26" value=4 ng-model="scores.q26">  I feel guilty all of the time</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question Q27
     <ul  id="key">
-    <ol> <input type="radio" name="Q27" value=1> I don't feel I am being punished</ol>
-    <ol> <input type="radio" name="Q27" value=2> I feel I may be punished</ol>
-    <ol> <input type="radio" name="Q27" value=3> I expect to be punished </ol>
-    <ol> <input type="radio" name="Q27" value=4>  I feel I am being punished</ol></li>
+    <ol> <input type="radio" name="Q27" value=1 ng-model="scores.q27"> I don't feel I am being punished</ol>
+    <ol> <input type="radio" name="Q27" value=2 ng-model="scores.q27"> I feel I may be punished</ol>
+    <ol> <input type="radio" name="Q27" value=3 ng-model="scores.q27"> I expect to be punished </ol>
+    <ol> <input type="radio" name="Q27" value=4 ng-model="scores.q27">  I feel I am being punished</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 7
     <ul  id="key">
-    <ol> <input type="radio" name="Q28" value=1> I don't feel disappointed in myself</ol>
-    <ol> <input type="radio" name="Q28" value=2> I am disappointed in myself</ol>
-    <ol> <input type="radio" name="Q28" value=3> I am disgusted with myself </ol>
-    <ol> <input type="radio" name="Q28" value=4>  I hate myself</ol></li>
+    <ol> <input type="radio" name="Q28" value=1ng-model="scores.q28"> I don't feel disappointed in myself</ol>
+    <ol> <input type="radio" name="Q28" value=2ng-model="scores.q28"> I am disappointed in myself</ol>
+    <ol> <input type="radio" name="Q28" value=3ng-model="scores.q28"> I am disgusted with myself </ol>
+    <ol> <input type="radio" name="Q28" value=4ng-model="scores.q28">  I hate myself</ol></li>
   </ul>
-  <!-- <ul class="questions">
-    <ul id="key">
-    <ul class="questions"> -->
   <li>Question 8
     <ul  id="key">
-    <ol> <input type="radio" name="Q29" value=1> I don't feel I am any worse than anybody else</ol>
-    <ol> <input type="radio" name="Q29" value=2> I am critical of myself for my weaknesses or mistakes</ol>
-    <ol> <input type="radio" name="Q29" value=3> I blame myself all the time for my faults </ol>
-    <ol> <input type="radio" name="Q29" value=4>  I blame myself for everything bad that happens</ol></li>
+    <ol> <input type="radio" name="Q29" value=1 ng-model="scores.q29"> I don't feel I am any worse than anybody else</ol>
+    <ol> <input type="radio" name="Q29" value=2 ng-model="scores.q29"> I am critical of myself for my weaknesses or mistakes</ol>
+    <ol> <input type="radio" name="Q29" value=3 ng-model="scores.q29"> I blame myself all the time for my faults </ol>
+    <ol> <input type="radio" name="Q29" value=4 ng-model="scores.q29">  I blame myself for everything bad that happens</ol></li>
   </ul>
   <li>Question 9
     <ul  id="key">
-    <ol> <input type="radio" name="Q30" value=1> I don't have any thoughts of killing myself</ol>
-    <ol> <input type="radio" name="Q30" value=2> I have thoughts of killing myself, but I would not carry them out.</ol>
-    <ol> <input type="radio" name="Q30" value=3> I would like to kill myself </ol>
-    <ol> <input type="radio" name="Q30" value=4>  I would kill myself if I had the chance</ol></li>
+    <ol> <input type="radio" name="Q30" value=1 ng-model="scores.q30"> I don't have any thoughts of killing myself</ol>
+    <ol> <input type="radio" name="Q30" value=2 ng-model="scores.q30"> I have thoughts of killing myself, but I would not carry them out.</ol>
+    <ol> <input type="radio" name="Q30" value=3 ng-model="scores.q30"> I would like to kill myself </ol>
+    <ol> <input type="radio" name="Q30" value=4 ng-model="scores.q30">  I would kill myself if I had the chance</ol></li>
   </ul>
   <li>Question 10
     <ul  id="key">
-    <ol> <input type="radio" name="Q31" value=1> I don't cry any more than usual</ol>
-    <ol> <input type="radio" name="Q31" value=2> I cry more now than I used to</ol>
-    <ol> <input type="radio" name="Q31" value=3> I cry all the time now</ol>
-    <ol> <input type="radio" name="Q31" value=4>  I used to be able to cry, but now I can't cry even though I want to</ol></li>
+    <ol> <input type="radio" name="Q31" value=1 ng-model="scores.q31"> I don't cry any more than usual</ol>
+    <ol> <input type="radio" name="Q31" value=2 ng-model="scores.q31"> I cry more now than I used to</ol>
+    <ol> <input type="radio" name="Q31" value=3 ng-model="scores.q31"> I cry all the time now</ol>
+    <ol> <input type="radio" name="Q31" value=4 ng-model="scores.q31">  I used to be able to cry, but now I can't cry even though I want to</ol></li>
   </ul>
   <li>Question 11
     <ul  id="key">
-    <ol> <input type="radio" name="Q32" value=1> I am no more irritated by things than I ever was</ol>
-    <ol> <input type="radio" name="Q32" value=2> I am slightly more irritated now than usual</ol>
-    <ol> <input type="radio" name="Q32" value=3> I am quite annoyed or irritated a good deal of the time</ol>
-    <ol> <input type="radio" name="Q32" value=4>  I feel irritated all the time</ol></li>
+    <ol> <input type="radio" name="Q32" value=1 ng-model="scores.q32"> I am no more irritated by things than I ever was</ol>
+    <ol> <input type="radio" name="Q32" value=2 ng-model="scores.q32"> I am slightly more irritated now than usual</ol>
+    <ol> <input type="radio" name="Q32" value=3 ng-model="scores.q32"> I am quite annoyed or irritated a good deal of the time</ol>
+    <ol> <input type="radio" name="Q32" value=4 ng-model="scores.q32">  I feel irritated all the time</ol></li>
   </ul>
   <li>Question 12
     <ul  id="key">
-    <ol> <input type="radio" name="Q33" value=1> I have not lost interest in other people</ol>
-    <ol> <input type="radio" name="Q33" value=2> I am less interested in other people than I used to be</ol>
-    <ol> <input type="radio" name="Q33" value=3> I have lost most of my interest in other people</ol>
-    <ol> <input type="radio" name="Q33" value=4>  I have lost all of my interest in other people</ol></li>
+    <ol> <input type="radio" name="Q33" value=1 ng-model="scores.q33"> I have not lost interest in other people</ol>
+    <ol> <input type="radio" name="Q33" value=2 ng-model="scores.q33"> I am less interested in other people than I used to be</ol>
+    <ol> <input type="radio" name="Q33" value=3 ng-model="scores.q33"> I have lost most of my interest in other people</ol>
+    <ol> <input type="radio" name="Q33" value=4 ng-model="scores.q33">  I have lost all of my interest in other people</ol></li>
   </ul>
   <li>Question 13
     <ul  id="key">
-    <ol> <input type="radio" name="Q34" value=1> I make decisions about as well as I ever could</ol>
-    <ol> <input type="radio" name="Q34" value=2> I put off making decisions more than I used to</ol>
-    <ol> <input type="radio" name="Q34" value=3> I have greater difficulty in making decisions more than I used to</ol>
-    <ol> <input type="radio" name="Q34" value=4>  I can't make decisions at all anymore</ol></li>
+    <ol> <input type="radio" name="Q34" value=1 ng-model="scores.q34"> I make decisions about as well as I ever could</ol>
+    <ol> <input type="radio" name="Q34" value=2 ng-model="scores.q34"> I put off making decisions more than I used to</ol>
+    <ol> <input type="radio" name="Q34" value=3 ng-model="scores.q34"> I have greater difficulty in making decisions more than I used to</ol>
+    <ol> <input type="radio" name="Q34" value=4 ng-model="scores.q34">  I can't make decisions at all anymore</ol></li>
   </ul>
   <li>Question 14
     <ul  id="key">
-    <ol> <input type="radio" name="Q35" value=1> I don't feel that I look any worse than I used to</ol>
-    <ol> <input type="radio" name="Q35" value=2> I am worried that I am looking old or unattractive</ol>
-    <ol> <input type="radio" name="Q35" value=3> I feel there are permanent changes in my appearance that make me look
+    <ol> <input type="radio" name="Q35" value=1 ng-model="scores.q35"> I don't feel that I look any worse than I used to</ol>
+    <ol> <input type="radio" name="Q35" value=2 ng-model="scores.q35"> I am worried that I am looking old or unattractive</ol>
+    <ol> <input type="radio" name="Q35" value=3 ng-model="scores.q35"> I feel there are permanent changes in my appearance that make me look
    unattractive</ol>
-    <ol> <input type="radio" name="Q35" value=4>  I believe that I look ugly</ol></li>
+    <ol> <input type="radio" name="Q35" value=4 ng-model="scores.q35">  I believe that I look ugly</ol></li>
   </ul>
   <li>Question 15
     <ul  id="key">
-    <ol> <input type="radio" name="Q36" value=1> I can work about as well as before</ol>
-    <ol> <input type="radio" name="Q36" value=2> It takes an extra effort to get started at doing something</ol>
-    <ol> <input type="radio" name="Q36" value=3> I have to push myself very hard to do anything</ol>
-    <ol> <input type="radio" name="Q36" value=4>  I can't do any work at all</ol></li>
+    <ol> <input type="radio" name="Q36" value=1 ng-model="scores.q36"> I can work about as well as before</ol>
+    <ol> <input type="radio" name="Q36" value=2 ng-model="scores.q36"> It takes an extra effort to get started at doing something</ol>
+    <ol> <input type="radio" name="Q36" value=3 ng-model="scores.q36"> I have to push myself very hard to do anything</ol>
+    <ol> <input type="radio" name="Q36" value=4 ng-model="scores.q36">  I can't do any work at all</ol></li>
   </ul>
   <li>Question 16
     <ul  id="key">
-    <ol> <input type="radio" name="Q37" value=1> I can sleep as well as usual</ol>
-    <ol> <input type="radio" name="Q37" value=2> I don't sleep as well as I used to</ol>
-    <ol> <input type="radio" name="Q37" value=3> I wake up 1-2 hours earlier than usual and find it hard to get back to sleep</ol>
-    <ol> <input type="radio" name="Q37" value=4> I wake up several hours earlier than I used to and cannot get back to sleep</ol></li>
+    <ol> <input type="radio" name="Q37" value=1 ng-model="scores.q37"> I can sleep as well as usual</ol>
+    <ol> <input type="radio" name="Q37" value=2 ng-model="scores.q37"> I don't sleep as well as I used to</ol>
+    <ol> <input type="radio" name="Q37" value=3 ng-model="scores.q37"> I wake up 1-2 hours earlier than usual and find it hard to get back to sleep</ol>
+    <ol> <input type="radio" name="Q37" value=4 ng-model="scores.q37"> I wake up several hours earlier than I used to and cannot get back to sleep</ol></li>
   </ul>
   <li>Question 17
     <ul  id="key">
-    <ol> <input type="radio" name="Q38" value=1> I can sleep as well as usual</ol>
-    <ol> <input type="radio" name="Q38" value=2> I get tired more easily than I used to</ol>
-    <ol> <input type="radio" name="Q38" value=3> I get tired from doing almost anything</ol>
-    <ol> <input type="radio" name="Q38" value=4> I am too tired to do anything</ol></li>
+    <ol> <input type="radio" name="Q38" value=1 ng-model="scores.q38"> I can sleep as well as usual</ol>
+    <ol> <input type="radio" name="Q38" value=2 ng-model="scores.q38"> I get tired more easily than I used to</ol>
+    <ol> <input type="radio" name="Q38" value=3 ng-model="scores.q38"> I get tired from doing almost anything</ol>
+    <ol> <input type="radio" name="Q38" value=4 ng-model="scores.q38"> I am too tired to do anything</ol></li>
   </ul>
   <li>Question 18
     <ul  id="key">
-    <ol> <input type="radio" name="Q39" value=1> My appetite is no worse than usual</ol>
-    <ol> <input type="radio" name="Q39" value=2> My appetite is not as good as it used to be</ol>
-    <ol> <input type="radio" name="Q39" value=3> My appetite is much worse now</ol>
-    <ol> <input type="radio" name="Q39" value=4> I have no appetite at all anymore</ol></li>
+    <ol> <input type="radio" name="Q39" value=1 ng-model="scores.q39"> My appetite is no worse than usual</ol>
+    <ol> <input type="radio" name="Q39" value=2 ng-model="scores.q39"> My appetite is not as good as it used to be</ol>
+    <ol> <input type="radio" name="Q39" value=3 ng-model="scores.q39"> My appetite is much worse now</ol>
+    <ol> <input type="radio" name="Q39" value=4 ng-model="scores.q39"> I have no appetite at all anymore</ol></li>
   </ul>
   <li>Question 19
     <ul  id="key">
-    <ol> <input type="radio" name="Q40" value=1> I haven't lost much weight, if any, lately</ol>
-    <ol> <input type="radio" name="Q40" value=2> I have lost more than five pounds</ol>
-    <ol> <input type="radio" name="Q40" value=3> I have lost more than ten pounds</ol>
-    <ol> <input type="radio" name="Q40" value=4> I have lost more than fifteen pounds</ol></li>
+    <ol> <input type="radio" name="Q40" value=1 ng-model="scores.q40"> I haven't lost much weight, if any, lately</ol>
+    <ol> <input type="radio" name="Q40" value=2 ng-model="scores.q40"> I have lost more than five pounds</ol>
+    <ol> <input type="radio" name="Q40" value=3 ng-model="scores.q40"> I have lost more than ten pounds</ol>
+    <ol> <input type="radio" name="Q40" value=4 ng-model="scores.q40"> I have lost more than fifteen pounds</ol></li>
   </ul>
   <li>Question 20
     <ul  id="key">
-    <ol> <input type="radio" name="Q41" value=1> I am no more worried about my health than usual</ol>
-    <ol> <input type="radio" name="Q41" value=2> I am worried about physical problems like aches, pains, upset stomach, or
+    <ol> <input type="radio" name="Q41" value=1 ng-model="scores.q41"> I am no more worried about my health than usual</ol>
+    <ol> <input type="radio" name="Q41" value=2 ng-model="scores.q41"> I am worried about physical problems like aches, pains, upset stomach, or
  constipation</ol>
-    <ol> <input type="radio" name="Q41" value=3> I am very worried about physical problems and it's hard to think of much else</ol>
-    <ol> <input type="radio" name="Q41" value=4> I am so worried about my physical problems that I cannot think of anything else</ol></li>
+    <ol> <input type="radio" name="Q41" value=3 ng-model="scores.q41"> I am very worried about physical problems and it's hard to think of much else</ol>
+    <ol> <input type="radio" name="Q41" value=4 ng-model="scores.q41"> I am so worried about my physical problems that I cannot think of anything else</ol></li>
   </ul>
   <li>Question 21
     <ul  id="key">
-    <ol> <input type="radio" name="Q42" value=1> I have not noticed any recent change in my interest in sex</ol>
-    <ol> <input type="radio" name="Q42" value=2> I am less interested in sex than I used to be</ol>
-    <ol> <input type="radio" name="Q42" value=3> I have almost no interest in sex</ol>
-    <ol> <input type="radio" name="Q42" value=4> I have lost interest in sex completely</ol></li>
+    <ol> <input type="radio" name="Q42" value=1 ng-model="scores.q42"> I have not noticed any recent change in my interest in sex</ol>
+    <ol> <input type="radio" name="Q42" value=2 ng-model="scores.q42"> I am less interested in sex than I used to be</ol>
+    <ol> <input type="radio" name="Q42" value=3 ng-model="scores.q42"> I have almost no interest in sex</ol>
+    <ol> <input type="radio" name="Q42" value=4 ng-model="scores.q42"> I have lost interest in sex completely</ol></li>
   </ul>
 
   </p>
   </ul>
 </ul>
+</ul>
+<a ui-sref='results'>
+<div class = "resultsbutton"  ng-click="postResults(newUser, scores)">Submit</div></a>
+
 </div>

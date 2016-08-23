@@ -1,1 +1,1 @@
-select * from assessments;
+-- select * from assessments;

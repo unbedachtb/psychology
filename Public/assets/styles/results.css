@@ -1,0 +1,12 @@
+.resultsPage {
+  background-image: url('../images/background-marsh.png');
+  background-size: cover;
+  height: 100vh;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  background-color: #A3ECFB;
+  margin-left: 400px;
+  margin-top: 100px;
+}
