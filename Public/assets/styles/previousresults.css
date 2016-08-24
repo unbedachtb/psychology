@@ -1,5 +1,5 @@
 .previousresultspage {
-  background-image: url('../images/results2.jpg');
+  background-image: url('../images/beautiful.jpg');
   background-size: cover;
   height: 100vh;
 }
@@ -9,5 +9,12 @@
   background-color: white;
   margin-left: 350px;
   margin-top: 50px;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
+  display: flex;
+  justify-content: center;
+}
+
+.boxForGraph h1 {
+  color: black;
+  z-index: 100;
 }

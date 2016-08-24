@@ -1,6 +1,5 @@
 <div class="take-assessment-page">
 
-
 <a ui-sref='home'><img src='assets/images/home_icon.png' alt="home image" class="imageOfHome"/></a>
 <a ui-sref='login' class="log-out">Log Out</a>
 <p class="assessmentName">Beck Anxiety Inventory</p> <br>
@@ -174,5 +173,5 @@
   <ol> <input type="radio" name="Q21" value=4 ng-model="scores.q21"> Severely - it bothered me a lot</ol></li>
   </ul>
 </li></ul>
-<a href="#"><div class = "resultsbutton" ng-click="postResults(newUser, scores, Date.now(), 1)">Submit</div></a>
+<a href="#"><div class = "resultsbutton" ng-click="postResults(currentUser.id, scores, 1)">Submit</div></a>
 </div>

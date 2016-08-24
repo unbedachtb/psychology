@@ -45,10 +45,13 @@ angular.module("app").service("mainService", function($http, $state) {
         return results.data;
     });
   };
-  this.postResults = function(scores) {
+  this.postResults = function(newUser, scores, num) {
 
     var score = {
-      result: 0
+      result: 0,
+      newUser: newUser,
+      date: new Date(),
+      num: num
     };
     for (var val in scores) {
       score.result += parseInt(scores[val]);
@@ -71,5 +74,25 @@ angular.module("app").service("mainService", function($http, $state) {
     });
   };
 
+  this.getCurrentUser = function(){
+    return $http({
+      method: "GET",
+      url: "/currentUser"
+    }).then(function(response){
+      console.log('mainService user', response);
+      return response.data;
+    });
+  };
+  this.getResultsByUser = function(id) {
+    console.log(id);
+    return $http({
+      method: "GET",
+      url: "/results",
+      data: id
+    }).then(function(response) {
+      console.log(response);
+      return response.data;
+    });
+  };
 
 });

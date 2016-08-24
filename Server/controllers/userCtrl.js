@@ -3,7 +3,7 @@ var db = app.get('db');
 module.exports = {
     login: function(req, res, next) {
         db.get_user(req.body.name, req.body.password, function(err, user) {
-            console.log("USER USER USER: ", user);
+            // console.log("USER USER USER: ", user);
             // req.session.user = user;
             res.status(200).json(user);
         });
@@ -14,17 +14,12 @@ module.exports = {
             req.body.password
         ];
         db.post_new_user(postanotheruser, function(err, users) {
-            console.log(users);
+            // console.log(users);
             res.status(200).json(req.body);
         });
-    }
+    },
+      getCurrentUser: function(req, res) {
+        res.send(req.user);
+      }
 
-    // getCurrentUser: function(req, res) {
-    //   db.get_current_user(function(err, user){
-    //     if(err) {
-    //       res.status(500).send(err);
-    //     } else {
-    //       res.status(200).send(user);
-    //     }
-    //   });
 };

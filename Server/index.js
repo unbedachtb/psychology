@@ -89,10 +89,10 @@ app.post('/user', userCtrl.postUser); //post user - create new account
 // app.get('/questions/:assessmentid', assessmentsCtrl.getQuestions); //get asssessment by id and assessments by id joined to score - see picked assessment and results
 // app.get('/results/:id', resultsCtrl.getResults); //post results - add results to server
 app.post('/results', resultsCtrl.postResults);
-app.get('/results:userid'.getResults);
+app.get('/results', resultsCtrl.getResults);
 
 //getCurrentUser
-// app.get('/me', userCtrl.getCurrentUser);
+app.get('/currentUser', userCtrl.getCurrentUser);
 
 
 app.listen(3000, function() {
