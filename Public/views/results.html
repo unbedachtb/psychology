@@ -2,9 +2,9 @@
 <a ui-sref='home'><img src='assets/images/home_icon.png' alt="home image" class="imageOfHome"/></a>
 <a ui-sref='login' class="log-out">Log Out</a>
 <div class="box">
-  <p>Results</p>
-  <p class="results">{{scores}}</p>
+  <p class="resultsTitle">Results</p>
+  <p class="results">Score: {{score}}</p>
+  <p class="key">Key: <br> 0-21 = low anxiety <br> 22-35 = moderate anxiety <br> 36 and above = potentially concerning levels of anxiety </p>
+  <div class="previousresults"><a ui-sref = 'previousresults'><p class=buttontext>See previous results<p></a></div>
 </div>
-
-
 </div>

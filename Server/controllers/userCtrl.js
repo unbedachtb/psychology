@@ -17,7 +17,7 @@ module.exports = {
             console.log(users);
             res.status(200).json(req.body);
         });
-    },
+    }
 
     // getCurrentUser: function(req, res) {
     //   db.get_current_user(function(err, user){

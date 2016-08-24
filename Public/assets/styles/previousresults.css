@@ -1,0 +1,13 @@
+.previousresultspage {
+  background-image: url('../images/results2.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.boxForGraph {
+  width: 700px;
+  height: 550px;
+  background-color: white;
+  margin-left: 350px;
+  margin-top: 50px;
+  opacity: 0.9;
+}

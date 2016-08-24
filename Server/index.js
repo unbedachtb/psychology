@@ -75,7 +75,8 @@ var resultsCtrl = require('./controllers/resultsCtrl.js');
 
 //endpoints
 app.post('/login', passport.authenticate('local', {
-        failureRedirect: '/login'
+        failureRedirect: '/login',
+        successRedirect: '/'
     }),
     function(req, res) {
         // console.log("SUCCESS", req.user);
@@ -88,6 +89,7 @@ app.post('/user', userCtrl.postUser); //post user - create new account
 // app.get('/questions/:assessmentid', assessmentsCtrl.getQuestions); //get asssessment by id and assessments by id joined to score - see picked assessment and results
 // app.get('/results/:id', resultsCtrl.getResults); //post results - add results to server
 app.post('/results', resultsCtrl.postResults);
+app.get('/results:userid'.getResults);
 
 //getCurrentUser
 // app.get('/me', userCtrl.getCurrentUser);

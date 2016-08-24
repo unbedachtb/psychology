@@ -30,7 +30,7 @@ angular.module("app").service("mainService", function($http, $state) {
           //   alert("Username and/or password is wrong");
           // } else {
           user = response.data;
-          console.log("user: ", user);
+          // console.log("user: ", user);
           $state.go('home');
           // }
     });
@@ -53,7 +53,7 @@ angular.module("app").service("mainService", function($http, $state) {
     for (var val in scores) {
       score.result += parseInt(scores[val]);
     }
-    console.log(score);
+    // console.log(score);
 
     return $http({
       method: 'POST',

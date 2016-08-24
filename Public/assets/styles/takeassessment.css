@@ -1,6 +1,7 @@
 .take-assessment-page {
-  background-image: url('../images/background-marsh.png');
+  background-image: url('../images/newmountain.jpg');
   overflow: scroll;
+  background-size: cover;
   height: 100vh;
 }
 .assessmentName {
@@ -55,8 +56,9 @@ a {
   width: 130px;
   color: white;
   background-color: gray;
-  border-radius: 25px;
+  border-radius: 5px;
   text-align: center;
+  padding: 6px;
 }
 .assessmentDescription {
   text-align: center;
@@ -89,6 +91,7 @@ a {
   font-size: 30px;
   padding-top: 40px;
   margin-left: -166px;
+
 }
 .questions2 li {
   border: black solid;
@@ -98,6 +101,7 @@ a {
   font-size: 30px;
   padding-top: 40px;
   margin-left: 0px;
+  opacity: 0.9;
 }
 ul ol {
   margin-top: 100px;

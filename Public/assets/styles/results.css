@@ -5,8 +5,48 @@
 }
 .box {
   width: 600px;
-  height: 400px;
+  height: 470px;
   background-color: #A3ECFB;
   margin-left: 400px;
   margin-top: 100px;
+}
+.resultsTitle {
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 45px;
+}
+.results {
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 45px;
+}
+.scoreMeaning {
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 45px;
+}
+.key {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.previousresults {
+  margin-left: 250px;
+  border: black solid;
+  margin-top: 20px;
+  padding: 3px;
+  width: 80px;
+  text-align: center;
+  border-radius: 15px;
+  background: white;
+}
+.buttontext {
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 20px;
+  color: black;
 }
