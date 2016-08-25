@@ -29,7 +29,7 @@ angular.module("app").service("mainService", function($http, $state) {
           // if(response.data.length === 0) {
           //   alert("Username and/or password is wrong");
           // } else {
-          user = response.data;
+          // user = response.data; MIGHT NEED LATER
           // console.log("user: ", user);
           $state.go('home');
           // }
@@ -79,7 +79,7 @@ angular.module("app").service("mainService", function($http, $state) {
       method: "GET",
       url: "/currentUser"
     }).then(function(response){
-      console.log('mainService user', response);
+      // console.log('mainService user', response);
       return response.data;
     });
   };
